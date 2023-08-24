@@ -19,18 +19,22 @@ function App() {
 
   // haritayi acar ve detaylarini gosterecegimiz ucagin id sini alir
   const openDetail = (id) => {
+    //detaylarini gosterecegimiz ucagin id sini alir
     setDetailId(id);
+    // haritayi acar
     setShowDetail(true);
   };
- 
+
   return (
     <>
       <Header />
       {/* yan detay alani */}
-      {showDetail && <SideDetail detailId={detailId} />}
+      {showDetail && (
+        <SideDetail detailId={detailId} setShowDetail={setShowDetail} />
+      )}
 
       <div className="view-buttons">
-        <button
+        <button 
           className={showMapView ? "active" : ""}
           onClick={() => setShowMapView(true)}
         >

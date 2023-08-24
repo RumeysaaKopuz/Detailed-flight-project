@@ -25,7 +25,7 @@ const MapView = ({ openDetail, setShowDetail }) => {
             <Popup>
               <div className="popup">
                 <span>kod: {fly.code}</span>
-                <button onClick={() => setShowDetail(fly.id)}>Detay</button>
+                <button onClick={() => openDetail(fly.id)}>Detay</button>
               </div>
             </Popup>
           </Marker>
