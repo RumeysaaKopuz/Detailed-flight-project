@@ -18,7 +18,7 @@ You can learn the details of all the planes on the map.
 - Sağ Üst Enlem: 41.582989
 - Sağ Üst Boylam: 44.816771
 
-
+<img='flight.mp4'>
 
 # Yapilacaklar
 
